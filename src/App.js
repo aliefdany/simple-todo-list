@@ -1,7 +1,8 @@
 import ReactDOM from "react-dom";
+import TodoParam from "./TodoParam";
 
 const App = () => {
-  return <h1>Hello World</h1>;
+  return <TodoParam />;
 };
 
 ReactDOM.render(<App />, document.getElementById("root"));

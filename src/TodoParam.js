@@ -19,14 +19,16 @@ const TodoParam = () => {
 
   return (
     <div className="todo">
-      <TodoParamImp
-        handleSubmit={handleSubmit}
-        handleChange={handleChange}
-        inputValue={inputValue}
-      />
-      <ol>
-        <TodoList list={list} />
-      </ol>
+      <div>
+        <TodoParamImp
+          handleSubmit={handleSubmit}
+          handleChange={handleChange}
+          inputValue={inputValue}
+        />
+        <ol>
+          <TodoList list={list} />
+        </ol>
+      </div>
     </div>
   );
 };

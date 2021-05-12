@@ -1,5 +1,6 @@
 import { useState } from "react";
 import TodoList from "./TodoList";
+import TodoParamImp from "./TodoParamImp";
 
 const TodoParam = () => {
   const [inputValue, setInputValue] = useState("");
@@ -18,18 +19,11 @@ const TodoParam = () => {
 
   return (
     <div className="todo">
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="input-todo">
-          <input
-            type="text"
-            value={inputValue}
-            placeholder="what to do?"
-            onChange={handleChange}
-          />
-        </label>
-        <button type="submit">Submit</button>
-      </form>
-
+      <TodoParamImp
+        handleSubmit={handleSubmit}
+        handleChange={handleChange}
+        inputValue={inputValue}
+      />
       <ol>
         <TodoList list={list} />
       </ol>

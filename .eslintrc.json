@@ -6,6 +6,10 @@
         "plugin:jsx-a11y/recommended",
         "prettier"
     ],
+    "rules": {
+        "react/prop-types": 0,
+        "react/react-in-jsx-scope": 0
+    },
     "plugins":[],
     "parserOptions": {
         "ecmaVersion": 2021,
@@ -18,6 +22,11 @@
         "es6": true,
         "browser": true,
         "node": true
+    },
+    "settings": {
+        "react": {
+            "version" : "detect"
+        }
     }
 }
 
